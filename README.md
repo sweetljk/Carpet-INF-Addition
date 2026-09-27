@@ -115,7 +115,7 @@ The `/normal` command restores the player's normal `1×` size.
 Clone the repository:
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/Carpet-INF-Addition.git
+git clone https://github.com/sweetljk/Carpet-INF-Addition.git
 cd Carpet-INF-Addition
 ```
 
