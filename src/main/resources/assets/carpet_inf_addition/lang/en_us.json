@@ -1,0 +1,7 @@
+{
+  "carpet.rule.commandHat.desc": "Controls who can use the /hat command.",
+  "carpet.rule.commandSit.desc": "Controls who can use the /sit command.",
+  "carpet.rule.visibleSpectators.desc": "Makes spectators visible to other players."
+,
+  "carpet.rule.commandScale.desc": "Controls who can use the /big and /small commands."
+}
