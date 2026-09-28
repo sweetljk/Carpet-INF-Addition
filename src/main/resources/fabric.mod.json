@@ -7,6 +7,8 @@
   "authors": [
     "sweetljk"
   ],
+  "license": "LGPL-3.0-only",
+  "icon": "assets/carpet_inf_addition/icon.png",
   "contact": {
     "sources": "https://github.com/sweetljk/Carpet-INF-Addition"
   },
