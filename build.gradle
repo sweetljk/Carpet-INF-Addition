@@ -18,7 +18,7 @@ dependencies {
     implementation "net.fabricmc:fabric-loader:${project.loader_version}"
     implementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_api_version}"
 
-    compileOnly files("libs/fabric-carpet-26.1+v260402.jar")
+    compileOnly files("libs/fabric-carpet-26.2+v260616.jar")
 }
 
 loom {

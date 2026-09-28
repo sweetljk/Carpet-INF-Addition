@@ -25,7 +25,7 @@ public final class SitCommand {
         if (player == null || !player.onGround()) return 0;
 
         ServerLevel level = player.level();
-        ArmorStand armorStand = new ArmorStand(EntityType.ARMOR_STAND, level);
+        ArmorStand armorStand = new ArmorStand(level, player.getX(), player.getY(), player.getZ());
         armorStand.setPos(player.getX(), player.getY() - 0.16, player.getZ());
         ((SitEntity) armorStand).carpetInf$setSitEntity(true);
         level.addFreshEntity(armorStand);
