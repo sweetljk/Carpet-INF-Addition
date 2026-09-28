@@ -1,0 +1,7 @@
+{
+  "carpet.rule.commandHat.desc": "控制谁可以使用 /hat 命令。",
+  "carpet.rule.commandSit.desc": "控制谁可以使用 /sit 命令。",
+  "carpet.rule.visibleSpectators.desc": "让旁观模式玩家对其他玩家可见。"
+,
+  "carpet.rule.commandScale.desc": "控制谁可以使用 /big 和 /small 命令。"
+}

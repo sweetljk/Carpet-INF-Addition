@@ -1,0 +1,63 @@
+plugins {
+    id "net.fabricmc.fabric-loom" version "${loom_version}"
+    id "maven-publish"
+}
+
+group = project.maven_group
+version = project.mod_version
+
+repositories {
+    maven { url = "https://masa.dy.fi/maven" }
+    maven { url = "https://maven.fallenbreath.me/releases" }
+    maven { url = "https://maven.fabricmc.net/" }
+}
+
+dependencies {
+    minecraft "com.mojang:minecraft:${project.minecraft_version}"
+
+    implementation "net.fabricmc:fabric-loader:${project.loader_version}"
+    implementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_api_version}"
+
+    compileOnly files("libs/fabric-carpet-26.1+v260402.jar")
+}
+
+loom {
+    runs {
+        configureEach {
+            runDir = "run"
+        }
+    }
+}
+
+processResources {
+    inputs.property "version", project.version
+
+    filesMatching("fabric.mod.json") {
+        expand "version": project.version
+    }
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = "UTF-8"
+    options.release = 25
+}
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_25
+    targetCompatibility = JavaVersion.VERSION_25
+    withSourcesJar()
+}
+
+jar {
+    from("LICENSE") {
+        rename { "${it}_Carpet-INF-Addition" }
+    }
+}
+
+publishing {
+    publications {
+        create("mavenJava", MavenPublication) {
+            from components.java
+        }
+    }
+}

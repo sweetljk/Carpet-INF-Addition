@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "carpet_inf_addition",
+  "version": "${version}",
+  "name": "Carpet-INF-Addition",
+  "description": "A Carpet extension for INF Server, adding /hat, /sit, player size commands, and visible spectators",
+  "authors": [
+    "sweetljk"
+  ],
+  "license": "LGPL-3.0-only",
+  "icon": "assets/carpet_inf_addition/icon.png",
+  "contact": {
+    "sources": "https://github.com/sweetljk/Carpet-INF-Addition"
+  },
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.inf.carpetaddition.CarpetINFAddition"
+    ]
+  },
+  "mixins": [
+    "carpet_inf_addition.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.19.3",
+    "minecraft": "26.1.2",
+    "carpet": ">=26.1",
+    "java": ">=25"
+  }
+}

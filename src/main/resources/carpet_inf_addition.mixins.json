@@ -1,0 +1,12 @@
+{
+  "required": true,
+  "package": "com.inf.carpetaddition.mixin",
+  "compatibilityLevel": "JAVA_25",
+  "mixins": [
+    "commandSit.MixinArmorStandEntity",
+    "visibleSpectators.MixinServerPlayerEntity"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
