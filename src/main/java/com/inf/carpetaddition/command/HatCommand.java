@@ -9,6 +9,7 @@ import net.minecraft.core.component.DataComponents;
 import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.util.Prediction;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.item.BlockItem;
@@ -65,7 +66,7 @@ public final class HatCommand {
                 itemEntity.setDefaultPickUpDelay();
                 level.addFreshEntity(itemEntity);
             } else {
-                player.getInventory().placeItemBackInInventory(hat.copy());
+                player.getInventory().placeItemBackInInventory(hat.copy(), Prediction.SERVER_ONLY);
             }
         }
 

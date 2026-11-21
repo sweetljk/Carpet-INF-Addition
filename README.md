@@ -56,14 +56,15 @@ The mod currently provides the following rules:
 
 ## Requirements
 
-* Minecraft **1.21.11**
-* Fabric Loader **0.19.2 or newer**
-* Fabric API
-* Carpet **1.4.193 or newer**
+* Minecraft **26.3**
+* Fabric Loader **0.19.5 or newer**
+* Fabric API **0.166.2+26.3 or newer**
+* Carpet **26.3 or newer**
+* Java **25 or newer**
 
 ## Installation
 
-1. Install Fabric Loader for Minecraft 1.21.11.
+1. Install Fabric Loader for Minecraft 26.3.
 2. Install Fabric API.
 3. Install Carpet.
 4. Download the latest `Carpet-INF-Addition` release.
