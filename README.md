@@ -38,7 +38,8 @@ Allows players to sit.
 
 ### Visible Spectators
 
-Provides a Carpet rule for controlling spectator visibility.
+Provides a Carpet rule for controlling spectator visibility. When enabled, spectators are visible
+to other players as floating heads (their body is hidden, as in vanilla spectator rendering).
 
 ```text
 /carpet visibleSpectators true
